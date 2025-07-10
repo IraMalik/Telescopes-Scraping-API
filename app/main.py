@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify, request
 from scraper import scrape_design_info, scrape_modern_telescopes
 
@@ -44,4 +45,5 @@ def search():
     return jsonify(results)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # fallback to 5000 for local
+    app.run(host="0.0.0.0", port=port, debug=True)
