@@ -11,6 +11,7 @@ This Flask API scrapes refractor telescopes from two websites and serves the dat
   - Search by keyword
 
 ## Folder Structure
+```pgsql
 telescopes-scraping-api/
 ├── app/
 │   ├── main.py
@@ -24,7 +25,7 @@ telescopes-scraping-api/
 ├── requirements.txt
 ├── Procfile
 └── README.md
-
+```
 ## Setup Instructions
 1. Clone and Install
 ```bash
@@ -37,8 +38,8 @@ python3 -m pip install -r requirements.txt
 python3 app/main.py
 ```
 3. Visit:
-http://127.0.0.1:5000/products
-http://127.0.0.1:5000/search?q=70mm
+- http://127.0.0.1:5000/products
+- http://127.0.0.1:5000/search?q=70mm
 
 ## Sample Outputs
 
