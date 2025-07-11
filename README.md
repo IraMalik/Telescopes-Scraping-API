@@ -1,4 +1,4 @@
-# 🔭 Refractor Telescopes Scraper API
+# 🔭 Refractor Telescopes API
 
 This Flask API scrapes refractor telescopes from two websites and serves the data via `/products` and `/search` endpoints.
 
